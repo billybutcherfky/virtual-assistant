@@ -1,0 +1,81 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make the video cover the entire screen */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Main content styling */
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(25, 183, 170);
+  text-align: center;
+  text-shadow: 0 0 10px rgb(25, 183, 170),
+               0 0 20px rgb(25, 183, 170),
+               0 0 40px rgb(25, 183, 170);
+}
+
+/* Image container styling */
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image img {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: none; /* Removed glow or shadow */
+  background: transparent; /* Ensure background stays clear */
+};
+
+
+h1 {
+  font-size: 3rem;
+  margin: 15px 0 10px;
+  letter-spacing: 5px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* Microphone button */
+.input {
+  margin-top: 50px;
+}
+
+.talk {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: rgb(232, 12, 12);
+  transition: 0.3s;
+}
+
+.talk:hover {
+  background: rgba(38, 208, 227, 0.4);
+}
+
+.content {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
